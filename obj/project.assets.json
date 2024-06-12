@@ -9034,6 +9034,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
+      "Npgsql >= 8.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -9106,6 +9107,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.6, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[8.0.3, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
