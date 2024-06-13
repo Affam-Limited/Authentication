@@ -91,10 +91,6 @@ namespace Authentication.Controllers
                         return Unauthorized();
                     }
 
-                    if (admin.userName != user_.UserName)
-                    {
-                        return Unauthorized("Only Admins can access this page");
-                    }
 
                     var result = await signInManager.CheckPasswordSignInAsync(user_, admin.password, true);
 

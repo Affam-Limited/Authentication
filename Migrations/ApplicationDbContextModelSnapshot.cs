@@ -35,7 +35,7 @@ namespace Authentication.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -48,7 +48,7 @@ namespace Authentication.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("LastLogin")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -57,7 +57,7 @@ namespace Authentication.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()

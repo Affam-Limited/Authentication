@@ -15,7 +15,7 @@ builder.Services.AddAuthorization();
 //cors 
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
 {
-    build.WithOrigins("http://localhost:5173/").AllowAnyMethod().AllowAnyHeader();
+    build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
 }));
 
 

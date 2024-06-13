@@ -12,13 +12,13 @@ namespace Authentication.Models
         [MaxLength(50)]
         public string Name { get; set; }
 
-        [Column(TypeName = "datetime")]
+        [Column]
         public DateTime CreatedDate { get; set; } = DateTime.Now;
 
-        [Column(TypeName = "datetime")]
+        [Column]
         public DateTime ModifiedDate { get; set; } = DateTime.Now;
 
-        [Column(TypeName = "datetime")]
+        [Column]
         public DateTime LastLogin { get; set; } = DateTime.Now;
 
         public bool IsAdmin { get; set; } = false;
